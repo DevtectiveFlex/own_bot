@@ -8,7 +8,9 @@
     "start:local": "node --env-file=.env ./.output/index.cjs",
     "dev": "tsx --env-file=.env ./server.ts",
     "build": "tsup",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "repository": {
     "type": "git",

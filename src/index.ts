@@ -1,2 +1,1 @@
-import 'dotenv/config';
-import '../src/bot.ts';
+import '../src/bot.js';

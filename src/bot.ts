@@ -1,5 +1,5 @@
 import { Bot } from 'grammy';
-import { BOT_TOKEN } from './config/config.js';
+import { BOT_TOKEN, isDev } from './config/env.js';
 
 
 export const bot = new Bot(BOT_TOKEN);
@@ -12,4 +12,6 @@ bot.on("message", (ctx) => {
   ctx.reply('Здесь должна быть обработка сообщения');
 })
 
-bot.start();
+if (isDev) {
+  bot.start();
+}

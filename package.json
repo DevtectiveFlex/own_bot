@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/DevtectiveFlex/own_bot/issues"
   },
-  "homepage": "https://github.com/DevtectiveFlex/own_bot#readme"
+  "homepage": "https://github.com/DevtectiveFlex/own_bot#readme",
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
 }

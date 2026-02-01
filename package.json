@@ -4,7 +4,15 @@
   "description": "Telegram-бот для управления интеллектуальной игрой в формате «Своя игра».",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./.output/index.cjs",
+    "start:local": "node --env-file=.env ./.output/index.cjs",
+    "dev": "tsx --env-file=.env ./server.ts",
+    "build": "tsup",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:ui": "vitest",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "repository": {
     "type": "git",
@@ -17,5 +25,22 @@
   "bugs": {
     "url": "https://github.com/DevtectiveFlex/own_bot/issues"
   },
-  "homepage": "https://github.com/DevtectiveFlex/own_bot#readme"
+  "homepage": "https://github.com/DevtectiveFlex/own_bot#readme",
+  "devDependencies": {
+    "@eslint/js": "^9.39.2",
+    "@types/node": "^25.1.0",
+    "@vitest/ui": "^4.0.18",
+    "eslint": "^9.39.2",
+    "globals": "^17.3.0",
+    "jiti": "^2.6.1",
+    "prettier": "^3.8.1",
+    "tsup": "^8.5.1",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.54.0",
+    "vitest": "^4.0.18"
+  },
+  "dependencies": {
+    "grammy": "^1.39.3"
+  }
 }
